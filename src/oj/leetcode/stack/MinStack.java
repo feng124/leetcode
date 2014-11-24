@@ -1,4 +1,4 @@
-package oj.leetcode.minstack;
+package oj.leetcode.stack;
 
 import java.util.Arrays;
 
