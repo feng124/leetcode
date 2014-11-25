@@ -1,4 +1,4 @@
-package oj.leetcode.array.findmin;
+package oj.leetcode.array.min;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package oj.leetcode.array.findmin2;
+package oj.leetcode.array.min2;
 
 import static org.junit.Assert.*;
 

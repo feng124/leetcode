@@ -1,4 +1,4 @@
-package oj.leetcode.string;
+package oj.leetcode.string.reverse;
 
 import static org.junit.Assert.*;
 
