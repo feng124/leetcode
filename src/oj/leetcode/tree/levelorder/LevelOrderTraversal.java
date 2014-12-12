@@ -31,7 +31,7 @@ public class LevelOrderTraversal {
 
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		final List<List<Integer>> ret = new ArrayList<List<Integer>>();
-		if (root == null) {
+		if (root != null) {
 		
 			final Deque<TreeEntry> queue = new ArrayDeque<TreeEntry>();
 			queue.addLast(new TreeEntry(root, 0));
