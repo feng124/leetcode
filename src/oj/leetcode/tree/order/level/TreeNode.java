@@ -1,11 +1,9 @@
-package oj.leetcode.tree.preorder;
+package oj.leetcode.tree.order.level;
 
 public class TreeNode {
 	
 	int val;
-	
 	TreeNode left;
-	
 	TreeNode right;
 	
 	public TreeNode(int val) {

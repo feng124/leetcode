@@ -1,4 +1,4 @@
-package oj.leetcode.tree.postorder;
+package oj.leetcode.tree.order.post;
 
 import static org.junit.Assert.*;
 

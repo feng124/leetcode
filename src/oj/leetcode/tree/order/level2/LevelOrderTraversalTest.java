@@ -1,4 +1,4 @@
-package oj.leetcode.tree.levelorder2;
+package oj.leetcode.tree.order.level2;
 
 import static org.junit.Assert.*;
 
