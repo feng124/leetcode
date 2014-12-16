@@ -5,6 +5,8 @@ import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
+import oj.leetcode.tree.TreeNode;
+
 /**
  * 
  * Given a binary tree, determine if it is height-balanced.

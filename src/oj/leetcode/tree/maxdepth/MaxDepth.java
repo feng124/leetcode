@@ -3,6 +3,8 @@ package oj.leetcode.tree.maxdepth;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import oj.leetcode.tree.TreeNode;
+
 /**
  * 
  * Given a binary tree, find its maximum depth.

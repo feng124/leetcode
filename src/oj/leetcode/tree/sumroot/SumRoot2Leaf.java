@@ -3,6 +3,8 @@ package oj.leetcode.tree.sumroot;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import oj.leetcode.tree.TreeNode;
+
 /**
  * 
  * Given a binary tree containing digits from 0-9 only, each root-to-leaf path

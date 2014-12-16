@@ -3,6 +3,8 @@ package oj.leetcode.tree.pathsum;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import oj.leetcode.tree.TreeNode;
+
 /**
  * 
  * Given a binary tree and a sum, determine if the tree has a root-to-leaf path

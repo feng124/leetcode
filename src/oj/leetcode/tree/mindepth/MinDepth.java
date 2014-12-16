@@ -3,6 +3,8 @@ package oj.leetcode.tree.mindepth;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import oj.leetcode.tree.TreeNode;
+
 /**
  * 
  * Given a binary tree, find its minimum depth.
