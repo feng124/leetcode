@@ -1,5 +1,7 @@
 package oj.leetcode.list.sort;
 
+import oj.leetcode.list.ListNode;
+
 /**
  * 
  * Sort a linked list in O(n log n) time using constant space complexity.

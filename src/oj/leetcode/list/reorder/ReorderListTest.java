@@ -1,6 +1,7 @@
 package oj.leetcode.list.reorder;
 
 import static org.junit.Assert.*;
+import oj.leetcode.list.ListNode;
 
 import org.junit.Before;
 import org.junit.Test;

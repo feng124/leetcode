@@ -3,6 +3,8 @@ package oj.leetcode.list.reorder;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import oj.leetcode.list.ListNode;
+
 /**
  *
  * Given a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to:

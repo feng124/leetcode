@@ -1,4 +1,4 @@
-package oj.leetcode.list.sort;
+package oj.leetcode.list;
 
 public class ListNode {
 	

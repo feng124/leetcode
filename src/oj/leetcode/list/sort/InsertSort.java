@@ -1,5 +1,7 @@
 package oj.leetcode.list.sort;
 
+import oj.leetcode.list.ListNode;
+
 /**
  * 
  * Sort a linked list using insertion sort.

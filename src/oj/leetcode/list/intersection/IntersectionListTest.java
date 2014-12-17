@@ -1,6 +1,7 @@
 package oj.leetcode.list.intersection;
 
 import static org.junit.Assert.*;
+import oj.leetcode.list.ListNode;
 
 import org.junit.Test;
 

@@ -1,5 +1,7 @@
 package oj.leetcode.list.cycle2;
 
+import oj.leetcode.list.ListNode;
+
 /**
  * 
  * Given a linked list, return the node where the cycle begins. If there is no

@@ -1,5 +1,7 @@
 package oj.leetcode.list.cycle;
 
+import oj.leetcode.list.ListNode;
+
 /**
  * 
  * Given a linked list, determine if it has a cycle in it.
