@@ -22,7 +22,7 @@ public class CycleListTest {
 		ListNode start = inst.detectCycle(head);
 		assertEquals(head, start);
 
-		head = ListBuilder.buildNormalList(new int[] { 1 });
+		head = ListBuilder.buildList(new int[] { 1 });
 		start = inst.detectCycle(head);
 		assertNull(start);
 //
@@ -30,15 +30,15 @@ public class CycleListTest {
 		start = inst.detectCycle(head);
 		assertEquals(start, head);
 //
-		head = ListBuilder.buildNormalList(new int[] { 1, 2 });
+		head = ListBuilder.buildList(new int[] { 1, 2 });
 		start = inst.detectCycle(head);
 		assertNull(start);
 
-		head = ListBuilder.buildNormalList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8 });
+		head = ListBuilder.buildList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8 });
 		start = inst.detectCycle(head);
 		assertNull(start);
 //
-		head = ListBuilder.buildNormalList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+		head = ListBuilder.buildList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
 		start = inst.detectCycle(head);
 		assertNull(start);
 

@@ -30,11 +30,12 @@ public class RemoveDuplicates {
 				}
 				cur = cur.next;
 			}
+			
 			ref.next = cur;
+			ref = ref.next;
 			if (cur == null) {
 				break;
 			}
-			ref = ref.next;
 		}
 		return head;
 	}

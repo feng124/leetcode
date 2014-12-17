@@ -23,7 +23,7 @@ public class CycleListTest {
 		boolean isCycleList = inst.hasCycle(head);
 		assertTrue(isCycleList);
 		
-		head = ListBuilder.buildNormalList(new int[] {1});
+		head = ListBuilder.buildList(new int[] {1});
 		isCycleList = inst.hasCycle(head);
 		assertFalse(isCycleList);
 		
@@ -43,15 +43,15 @@ public class CycleListTest {
 		isCycleList = inst.hasCycle(head);
 		assertTrue(isCycleList);
 		
-		head = ListBuilder.buildNormalList(new int[] {1, 2, 3});
+		head = ListBuilder.buildList(new int[] {1, 2, 3});
 		isCycleList = inst.hasCycle(head);
 		assertFalse(isCycleList);
 		
-		head = ListBuilder.buildNormalList(new int[] {1, 2, 3, 4, 5, 6, 7, 8});
+		head = ListBuilder.buildList(new int[] {1, 2, 3, 4, 5, 6, 7, 8});
 		isCycleList = inst.hasCycle(head);
 		assertFalse(isCycleList);
 		
-		head = ListBuilder.buildNormalList(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9});
+		head = ListBuilder.buildList(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9});
 		isCycleList = inst.hasCycle(head);
 		assertFalse(isCycleList);
 		
