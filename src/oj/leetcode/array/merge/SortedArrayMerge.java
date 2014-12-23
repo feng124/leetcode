@@ -9,7 +9,7 @@ import java.util.Arrays;
  * O(log(m+n)).
  *
  */
-public class ArrayMerge {
+public class SortedArrayMerge {
 
 	public int[] mergeSortedArray(int[] A, int[] B) {
 		if (A == null || A.length == 0) {

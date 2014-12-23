@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ArrayMergeTest {
+public class SortedArrayMergeTest {
 
-	private final ArrayMerge inst = new ArrayMerge();
+	private final SortedArrayMerge inst = new SortedArrayMerge();
 
 	@Test
 	public void test() {
