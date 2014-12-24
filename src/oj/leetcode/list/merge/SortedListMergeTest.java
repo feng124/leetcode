@@ -55,10 +55,34 @@ public class SortedListMergeTest {
 		ln = inst.mergeTwoLists(l1, l2);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 10 });
-		
+
 		ln = inst.mergeTwoLists(l2, l1);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 10 });
+
+		int[] la = new int[5000];
+		int[] lb = new int[5000];
+		for (int i = 0; i < la.length; i++) {
+			la[i] = 2 * i;
+			lb[i] = la[i] + 1;
+		}
+		l1 = ListBuilder.buildList(la);
+		l2 = ListBuilder.buildList(lb);
+		ln = inst.mergeTwoLists(l1, l2);
+		int val = 0;
+		while(ln != null) {
+			assertEquals(ln.val, val);
+			ln = ln.next;
+			val += 1;
+		}
+		
+		ln = inst.mergeTwoLists(l2, l1);
+		val = 0;
+		while(ln != null) {
+			assertEquals(ln.val, val);
+			ln = ln.next;
+			val += 1;
+		}
 	}
 
 }
