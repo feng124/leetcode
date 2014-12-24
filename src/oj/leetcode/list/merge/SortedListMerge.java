@@ -21,15 +21,42 @@ public class SortedListMerge {
 		}
 		
 		if (l1 != null && l2 != null) {
-			ListNode h1 = new ListNode(-1, l1);
-			ListNode h2 = new ListNode(-1, l2);
 			
-			ListNode ref = l1;
-			ListNode prev = h1;
-			ListNode lb = l2;
-			ListNode lbp = h2;
+			head = new ListNode(-1, l1);
+			ListNode h2 = new ListNode(-1, l2);
+			ListNode prev = head;
+			while(h2.next != null) {
+				ListNode ref = h2.next;
+				prev = findNode(prev, ref);
+				if (prev.next == null) {
+					prev.next = ref;
+					break;
+				}
+				ref = prev.next;
+				ListNode _prev = findNode(h2, ref);
+				prev.next = h2.next;
+				h2.next = _prev.next;
+				_prev.next = ref;
+				prev = _prev;
+			}
+			head = head.next;
 		}
 		
 		return head;
 	}
+
+	private ListNode findNode(ListNode list, ListNode ref) {
+		ListNode prev = list;
+		ListNode cur = prev.next;
+		while(cur != null) {
+			if (cur.val > ref.val) {
+				break;
+			}
+			prev = cur;
+			cur = cur.next;
+		}
+		
+		return prev;
+	}
+	
 }

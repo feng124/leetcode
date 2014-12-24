@@ -18,10 +18,12 @@ public class SortedListMergeTest {
 		int[] array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 5, 6 });
 
+		l1 = ListBuilder.buildList(new int[] { 5 });
 		ln = inst.mergeTwoLists(l2, l1);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 5, 6 });
 
+		l1 = ListBuilder.buildList(new int[] { 5 });
 		l2 = ListBuilder.buildList(new int[] {});
 		ln = inst.mergeTwoLists(l1, l2);
 		array = ListBuilder.toArray(ln);
@@ -31,11 +33,14 @@ public class SortedListMergeTest {
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 5 });
 
+		l1 = ListBuilder.buildList(new int[] { 5 });
 		l2 = ListBuilder.buildList(new int[] { 6, 6, 7 });
 		ln = inst.mergeTwoLists(l1, l2);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 5, 6, 6, 7 });
 
+		l1 = ListBuilder.buildList(new int[] { 5 });
+		l2 = ListBuilder.buildList(new int[] { 6, 6, 7 });
 		ln = inst.mergeTwoLists(l2, l1);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 5, 6, 6, 7 });
@@ -46,6 +51,8 @@ public class SortedListMergeTest {
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
 
+		l1 = ListBuilder.buildList(new int[] { 0, 1, 2, 3, 4 });
+		l2 = ListBuilder.buildList(new int[] { 5, 6, 7, 8, 9, 10 });
 		ln = inst.mergeTwoLists(l2, l1);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
@@ -56,6 +63,8 @@ public class SortedListMergeTest {
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 10 });
 
+		l1 = ListBuilder.buildList(new int[] { 1, 3, 5, 7 });
+		l2 = ListBuilder.buildList(new int[] { 0, 2, 4, 6, 8, 10 });
 		ln = inst.mergeTwoLists(l2, l1);
 		array = ListBuilder.toArray(ln);
 		assertArrayEquals(array, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 10 });
@@ -76,6 +85,8 @@ public class SortedListMergeTest {
 			val += 1;
 		}
 		
+		l1 = ListBuilder.buildList(la);
+		l2 = ListBuilder.buildList(lb);
 		ln = inst.mergeTwoLists(l2, l1);
 		val = 0;
 		while(ln != null) {
